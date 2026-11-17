@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx tsx --env-file=.env src/main.ts",
+    "smoke": "npx tsx --env-file=.env src/smoke.ts"
   },
   "keywords": [],
   "type": "commonjs",
   "devDependencies": {
     "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },
   "dependencies": {
